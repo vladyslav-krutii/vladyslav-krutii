@@ -28,10 +28,10 @@ now:       building projects where security meets infrastructure
 
 <p align="center">
   <a href="https://github.com/vladyslav-krutii/secscan">
-    <img src="https://github-readme-stats.vercel.app/api/pin/?username=vladyslav-krutii&repo=secscan&description_lines_count=3&theme=github_dark&border_color=1d4636&border_radius=14&title_color=00ff9c&icon_color=00ff9c&bg_color=0d1117" alt="secscan"/>
+    <img src="https://raw.githubusercontent.com/vladyslav-krutii/vladyslav-krutii/output/pin-secscan.svg" alt="secscan"/>
   </a>
   <a href="https://github.com/vladyslav-krutii/kse-air-alerts">
-    <img src="https://github-readme-stats.vercel.app/api/pin/?username=vladyslav-krutii&repo=kse-air-alerts&description_lines_count=3&theme=github_dark&border_color=1d4636&border_radius=14&title_color=00ff9c&icon_color=00ff9c&bg_color=0d1117" alt="kse-air-alerts"/>
+    <img src="https://raw.githubusercontent.com/vladyslav-krutii/vladyslav-krutii/output/pin-kse-air-alerts.svg" alt="kse-air-alerts"/>
   </a>
 </p>
 
@@ -59,11 +59,11 @@ now:       building projects where security meets infrastructure
 ### `> git log --stats`
 
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=vladyslav-krutii&show_icons=true&hide_rank=true&hide=issues,contribs&line_height=24&card_width=360&theme=github_dark&border_color=1d4636&border_radius=14&title_color=00ff9c&icon_color=00ff9c&text_color=e6edf3&bg_color=0d1117" alt="GitHub stats"/>
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=vladyslav-krutii&layout=compact&langs_count=6&card_width=360&theme=github_dark&border_color=1d4636&border_radius=14&title_color=00ff9c&text_color=e6edf3&bg_color=0d1117" alt="Top languages"/>
+  <img src="https://raw.githubusercontent.com/vladyslav-krutii/vladyslav-krutii/output/stats.svg" alt="GitHub stats"/>
+  <img src="https://raw.githubusercontent.com/vladyslav-krutii/vladyslav-krutii/output/top-langs.svg" alt="Top languages"/>
 </p>
 <p align="center">
-  <img src="https://streak-stats.demolab.com?user=vladyslav-krutii&card_width=724&border_radius=14&background=0D1117&border=1D4636&stroke=1D4636&ring=00FF9C&fire=00FF9C&currStreakNum=E6EDF3&sideNums=00FF9C&currStreakLabel=00FF9C&sideLabels=E6EDF3&dates=8B949E" alt="Streak"/>
+  <img src="https://raw.githubusercontent.com/vladyslav-krutii/vladyslav-krutii/output/streak.svg" alt="Streak"/>
 </p>
 
 <p align="center">

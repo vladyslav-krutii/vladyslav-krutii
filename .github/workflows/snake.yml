@@ -1,4 +1,4 @@
-name: Generate contribution snake
+name: Generate profile cards
 
 on:
   schedule:
@@ -11,9 +11,16 @@ permissions:
   contents: write
 
 jobs:
-  snake:
+  cards:
     runs-on: ubuntu-latest
     steps:
+      - uses: actions/checkout@v4
+
+      - name: Stats, languages, streak and pinned-repo cards
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: python3 .github/scripts/cards.py "${{ github.repository_owner }}" dist secscan kse-air-alerts
+
       - uses: Platane/snk@v3
         with:
           github_user_name: ${{ github.repository_owner }}
