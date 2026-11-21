@@ -19,7 +19,7 @@ jobs:
       - name: Stats, languages, streak and pinned-repo cards
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: python3 .github/scripts/cards.py "${{ github.repository_owner }}" dist secscan kse-air-alerts
+        run: python3 .github/scripts/cards.py "${{ github.repository_owner }}" dist secscan kse-air-alerts k8s-attack-defense-lab
 
       - uses: Platane/snk@v3
         with:

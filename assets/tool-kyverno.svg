@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="105" height="28" viewBox="0 0 105 28" role="img" aria-label="Kyverno">
+<rect x="0.75" y="0.75" width="103.9" height="26.5" rx="13.25" fill="#0f1714" stroke="#ffb547" stroke-opacity="0.55" stroke-width="1.5"/>
+<g transform="translate(14 6.0)"><circle cx="8" cy="8" r="4.5" fill="#ffb547"/></g>
+<text x="39" y="18.32" font-family="'JetBrains Mono','Cascadia Code','SF Mono',Menlo,Consolas,monospace" font-size="12" font-weight="600" fill="#e6edf3" textLength="50.4" lengthAdjust="spacingAndGlyphs">Kyverno</text>
+</svg>
