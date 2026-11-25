@@ -81,7 +81,7 @@ for i, (ic, label, value) in enumerate(rows):
     body += (f'<g class="fade" style="animation-delay:{150 + i * 150}ms">{icon(ic, 25, y)}'
              f'<text x="50" y="{y + 12.5}" font-size="14" font-weight="600" fill="{TEXT}">{label}</text>'
              f'<text x="245" y="{y + 12.5}" font-size="14" font-weight="700" fill="{TEXT}">{value}</text></g>')
-(OUT / "stats.svg").write_text(card(360, 141, body, f"{first_name}'s GitHub stats"), encoding="utf-8")
+stats_body = body
 
 # ------------------------------------------------------------------ top languages card
 langs = {}
@@ -106,6 +106,8 @@ for i, (name, (size, color)) in enumerate(top):
              f'<text x="{cx + 17}" y="{cy}" font-size="11" fill="{TEXT}">{escape(name)} {100 * size / total:.2f}%</text></g>')
 h = max(140, 82 + ((len(top) + 1) // 2) * 25 - 2)
 (OUT / "top-langs.svg").write_text(card(360, h, body, "Most used languages"), encoding="utf-8")
+# same height as the languages card so the two sit level side by side
+(OUT / "stats.svg").write_text(card(360, h, stats_body, f"{first_name}'s GitHub stats"), encoding="utf-8")
 
 # ------------------------------------------------------------------ streak card
 today = dt.datetime.now(dt.timezone.utc).date()
