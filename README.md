@@ -1,7 +1,7 @@
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0d1117,50:0a3d2e,100:00ff9c&height=180&section=header&text=Vladyslav%20Krutii&fontSize=48&fontColor=e6edf3&fontAlignY=38&desc=cybersecurity%20%C2%B7%20CTF%20%C2%B7%20DevOps&descSize=18&descAlignY=60&descColor=00ff9c" width="100%"/>
+<img src="assets/banner-header.svg" width="100%"/>
 
 <p align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=500&size=20&duration=3000&pause=900&color=00FF9C&center=true&vCenter=true&width=620&lines=%24+whoami;Cybersecurity+student+%40+KSE+%F0%9F%87%BA%F0%9F%87%A6;CTF+player+%E2%80%94+team+KSE_CS1;Reversing+binaries+%26+breaking+web+apps;Signing+images+%26+hardening+K8s" alt="Typing SVG" />
+  <img src="assets/typing.svg" alt="Typing SVG" />
 </p>
 
 <p align="center">
@@ -47,9 +47,9 @@ now:       DevSecOps: supply-chain security & Kubernetes hardening
 ### `> stack --list`
 
 <p align="center">
-  <img src="https://skillicons.dev/icons?i=py,c,cs,ts,js,bash,powershell&theme=dark" alt="languages"/><br/>
-  <img src="https://skillicons.dev/icons?i=fastapi,django,nextjs,react,dotnet,tailwind&theme=dark" alt="frameworks"/><br/>
-  <img src="https://skillicons.dev/icons?i=docker,kubernetes,githubactions,prometheus,grafana,linux,kali,vercel,git&theme=dark" alt="infra & tools"/>
+  <img src="assets/icons-languages.svg" alt="languages"/><br/>
+  <img src="assets/icons-frameworks.svg" alt="frameworks"/><br/>
+  <img src="assets/icons-infra.svg" alt="infra & tools"/>
 </p>
 
 <p align="center">
@@ -80,4 +80,4 @@ now:       DevSecOps: supply-chain security & Kubernetes hardening
   </picture>
 </p>
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:00ff9c,50:0a3d2e,100:0d1117&height=100&section=footer" width="100%"/>
+<img src="assets/banner-footer.svg" width="100%"/>
