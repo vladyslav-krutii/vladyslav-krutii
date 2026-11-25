@@ -178,12 +178,15 @@ body = f'''<line x1="{W/3:.1f}" y1="28" x2="{W/3:.1f}" y2="170" stroke="{BORDER}
 for name in PINS:
     r = gql("""query($o:String!,$n:String!){ repository(owner:$o,name:$n){
       name description stargazerCount forkCount primaryLanguage{ name color } } }""", o=LOGIN, n=name)["repository"]
-    lines = textwrap.wrap(r["description"] or "", 56)[:3]
+    lines = textwrap.wrap(r["description"] or "", 56)
+    if len(lines) > 4:
+        lines = lines[:4]
+        lines[3] = lines[3].rstrip(" ,.;:") + "…"
     body = (f'{icon("repo", 25, 22)}'
             f'<text x="50" y="35" font-size="18" font-weight="600" fill="{TITLE}">{escape(r["name"])}</text>')
     for i, line in enumerate(lines):
         body += f'<text x="25" y="{65 + i * 18}" font-size="13" fill="{TEXT}">{escape(line)}</text>'
-    x, y = 25, 128
+    x, y = 25, 146
     if r["primaryLanguage"]:
         lang = r["primaryLanguage"]
         body += (f'<circle cx="{x + 6}" cy="{y - 4}" r="6" fill="{lang["color"] or MUTED}"/>'
@@ -191,6 +194,6 @@ for name in PINS:
         x += 18 + len(lang["name"]) * 7.5 + 18
     body += (f'{icon("star", x, y - 12)}'
              f'<text x="{x + 22}" y="{y}" font-size="13" fill="{TEXT}">{r["stargazerCount"]}</text>')
-    (OUT / f"pin-{name}.svg").write_text(card(400, 150, body, f"{r['name']}: {r['description'] or ''}"), encoding="utf-8")
+    (OUT / f"pin-{name}.svg").write_text(card(400, 168, body, f"{r['name']}: {r['description'] or ''}"), encoding="utf-8")
 
 print(f"stars={stars} langs={[n for n, _ in top]} total={total_contrib} current={cur} longest={longest}")
